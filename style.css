@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(background.jpg);
+  background-size: cover;
+  font-family: 'Cabin', sans-serif;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  padding: 100px;
+  background: rgba(0,0,0,0.5);
+  border-radius: 10px;
+  top: 50vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  max-width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.logo img {
+  height: 120px;
+}
+
+.logo h1 {
+  font-size: 35px;
+  color: lime;
+}
+
+.comandi {
+  margin: 5px 0;
+  text-align: center;
+  background: lime;
+  padding: 10px;
+}
+
+.monopattino {
+  position: relative;
+  color: white;
+  margin-right: 500px;
+}
+
+.monopattino h3 {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.monopattino span {
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.barra {
+  margin-top: 3px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#giallo {
+  background: #ffc40c;
+  width: 320px;
+}
+
+#verde {
+  background: #32cd32;
+  width: 560px;
+}
+
+#rosso {
+  background: #ff4040;
+  width: 140px;
+}
+
+.monopattino .barra {
+  color: rgba(0,0,0,0.5);
+}
+
+.monopattino:hover #giallo::after {
+  position: absolute;
+  content: '30%';
+  bottom: 5px;
+  left: 280px;
+}
+
+.monopattino:hover #verde::after {
+  position: absolute;
+  content: '50%';
+  bottom: 5px;
+  left: 520px;
+}
+
+.monopattino:hover #rosso::after {
+  position: absolute;
+  content: '13%';
+  bottom: 5px;
+  left: 106px;
+}
